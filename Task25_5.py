@@ -6,6 +6,7 @@ import time
 def testing():
     pytest.driver = webdriver.Chrome('C:\Task24\chromedriver.exe')
     # Переходим на страницу авторизации
+    # неясное ожидание 10 секунд
     pytest.driver.implicitly_wait(10)
     pytest.driver.get('http://petfriends.skillfactory.ru/login')
 
